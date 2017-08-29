@@ -1,5 +1,5 @@
-FROM golang:1.8-alpine
-MAINTAINER nownabe <nownabe@gmail.com>
+FROM golang:1.9-alpine
+LABEL maintainer=goodpatch <info@goodpatch.com>
 
 RUN \
   apk add --update --no-cache git gcc musl-dev g++ curl make \
