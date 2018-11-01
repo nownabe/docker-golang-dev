@@ -3,5 +3,7 @@ LABEL maintainer "nownabe <nownabe@gmail.com>"
 
 ENV golangci_lint_version 1.11.2
 
+ENV GO111MODULE=on
+
 RUN wget -O - -q https://install.goreleaser.com/github.com/golangci/golangci-lint.sh \
     | sh -s v${golangci_lint_version}
